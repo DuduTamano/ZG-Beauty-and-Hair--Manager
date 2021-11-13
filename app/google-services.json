@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "116971418767",
+    "firebase_url": "https://zg-beauty-and-hair-6-default-rtdb.firebaseio.com",
+    "project_id": "zg-beauty-and-hair-6",
+    "storage_bucket": "zg-beauty-and-hair-6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116971418767:android:33d115117a86920a642cfa",
+        "android_client_info": {
+          "package_name": "com.example.zgbeautyandhair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116971418767-17sfapm58p5veip9l5l7k9278fa1mdlq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zgbeautyandhair",
+            "certificate_hash": "dc873aa1bb90e917160a49d2666af561350cec0a"
+          }
+        },
+        {
+          "client_id": "116971418767-3pk4sd9a33ghslv7ois823pvrldo052s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zgbeautyandhair",
+            "certificate_hash": "b7491710c2536e2bcf8fd027fe1211991c401872"
+          }
+        },
+        {
+          "client_id": "116971418767-5c9tjn4i8srmhqpu1ddbqobpea2i4dse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACqmq4gI81We92jf3D8o5CSla4V-zvBR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116971418767-5c9tjn4i8srmhqpu1ddbqobpea2i4dse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116971418767:android:bc19f8df20f614d6642cfa",
+        "android_client_info": {
+          "package_name": "com.example.zgbeautyandhairstaff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116971418767-j090jtg1qgask932lmu50ufq77h6ko53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zgbeautyandhairstaff",
+            "certificate_hash": "b7491710c2536e2bcf8fd027fe1211991c401872"
+          }
+        },
+        {
+          "client_id": "116971418767-5c9tjn4i8srmhqpu1ddbqobpea2i4dse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACqmq4gI81We92jf3D8o5CSla4V-zvBR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116971418767-5c9tjn4i8srmhqpu1ddbqobpea2i4dse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

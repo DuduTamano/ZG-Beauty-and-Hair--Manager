@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp"
+    android:id="@+id/mainLayout"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/cart_img"
+        android:layout_width="100dp"
+        android:layout_height="108dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/txt_item_name"
+        android:text="Product Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="140dp"
+        android:layout_toEndOf="@+id/cart_img"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_item_price"
+        android:layout_weight="2"
+        android:text="Product Price"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cart_img"
+        android:layout_below="@id/txt_item_name"
+        android:layout_marginRight="140dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/txt_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="140dp"
+
+        />
+
+</androidx.cardview.widget.CardView>

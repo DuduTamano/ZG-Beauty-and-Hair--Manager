@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Z&amp;G Beauty and Hair Staff</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="product">המצורים שלנו:</string>
+
+    <string name="Salon">מספרה:</string>
+    <string name="Barber">ספריות:</string>
+    <string name="Customer">לקוחה:</string>
+    <string name="Phone">נייד:</string>
+    <string name="Time">שעת התור:</string>
+    <string name="Extra_Service">שירות:</string>
+    <string name="Extra_Items">פריט נוסף:</string>
+    <string name="Total_Price">מחיר סופי:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cart">Cart</string>
+    <string name="address_bullet">\u2022 כתובתנו:</string>
+    <string name="time_bullet">\u2022 בשעה:</string>
+    <string name="stylelist_bullet">\u2022 ספרית:</string>
+    <string name="bullet">\u2022 שעה:</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/drawable/ic_search.xml" value="0.1685185185185185" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-1080x1920/activity_staff_home.xml" value="0.2056159420289855" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-anydpi/activity_staff_home.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-hdpi/activity_staff_home.xml" value="0.536" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-land/activity_staff_home.xml" value="0.21164021164021163" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-ldpi/activity_staff_home.xml" value="0.25" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-long/activity_staff_home.xml" value="0.4" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-mdpi/activity_staff_home.xml" value="0.25" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-nodpi/activity_staff_home.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-normal/activity_staff_home.xml" value="0.536" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-small/activity_staff_home.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-sw420dp/activity_staff_home.xml" value="0.291970802919708" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-sw4dp/activity_staff_home.xml" value="0.6" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-sw600dp/activity_staff_home.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-xhdpi/activity_staff_home.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-xlarge/activity_staff_home.xml" value="0.21164021164021163" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-xxhdpi/activity_staff_home.xml" value="0.25" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout-xxxhdpi/activity_staff_home.xml" value="0.2056159420289855" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_booking.xml" value="0.19959677419354838" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_calendar.xml" value="0.12132725430597771" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_category.xml" value="0.152" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_delete_booking.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_done_service.xml" value="0.2" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_notification.xml" value="0.4" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_orders.xml" value="0.1736111111111111" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_product_list.xml" value="0.536" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_staff_home.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/activity_users_contact.xml" value="0.2" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/fragment_total_price.xml" value="0.2" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_booking_deleted.xml" value="0.11953551912568305" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_bookings_item.xml" value="0.16495901639344263" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_category_item.xml" value="0.4" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_confirm_shopping.xml" value="0.1772863568215892" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_dialog_booking.xml" value="0.2" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_dialog_cancelled.xml" value="0.10972222222222222" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_look_book.xml" value="0.12158469945355191" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_notification_item.xml" value="0.2" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_order_detail_item.xml" value="0.1772863568215892" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_orders_item.xml" value="0.4" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_product_item.xml" value="0.15" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_shopping_item.xml" value="0.1772863568215892" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_update_category.xml" value="0.15" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_update_item.xml" value="0.15" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_user_contact.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/layout/layout_users_delete_dialog.xml" value="0.1875" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/menu/order_filter_memu.xml" value="0.14537037037037037" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair Staff/app/src/main/res/menu/user_contacs_menu.xml" value="0.1425925925925926" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.176" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

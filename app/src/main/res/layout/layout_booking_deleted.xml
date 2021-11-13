@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp"
+    android:layoutDirection="rtl">
+
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Status: Placed"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/customer_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_status"
+            android:background="#fff"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/txt_salon_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:fontFamily="@font/elephant"
+                android:text="Salon Name"
+                android:textColor="@android:color/black"
+                android:textDirection="rtl"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_salon_name"
+                android:layout_toLeftOf="@id/userImage"
+                android:fontFamily="sans-serif"
+                android:text="שם הלקוחה:"
+                android:textDirection="rtl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_salon_name"
+                android:layout_marginStart="5dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:layout_toEndOf="@+id/customer_name"
+                android:fontFamily="sans-serif"
+                android:text="Customer name"
+                android:textDirection="rtl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/customer_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_customer_name"
+                android:layout_toLeftOf="@id/userImage"
+                android:fontFamily="sans-serif"
+                android:text="מספר נייד לקוחה:"
+                android:textDirection="rtl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_customer_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_customer_name"
+                android:layout_marginStart="5dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:layout_toEndOf="@+id/customer_phone_number"
+                android:fontFamily="sans-serif"
+                android:text="Phone Number"
+                android:textDirection="rtl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/customer_booking_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_customer_phone"
+                android:layout_toLeftOf="@id/userImage"
+                android:fontFamily="sans-serif"
+                android:text="מועד התור:"
+                android:textDirection="rtl"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/txt_customer_phone"
+                android:layout_marginStart="5dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:layout_toEndOf="@+id/customer_booking_time"
+                android:fontFamily="sans-serif"
+                android:text="Time"
+                android:textDirection="rtl"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/booking_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_below="@+id/customer_info">
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_confirm_booking"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/black"
+                android:onClick="deleteBooking"
+                android:text="אישור"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_delete_booking"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/black"
+                android:onClick="deleteBooking"
+                android:text="מחיקה"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

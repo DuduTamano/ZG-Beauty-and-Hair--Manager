@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#fff">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="25dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/txt_salon_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:fontFamily="@font/elephant"
+                android:text="Salon Name"
+                android:textColor="@android:color/black"
+                android:textDirection="rtl"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_barber_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_salon_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:fontFamily="@font/rubik"
+                android:text="Barber"
+                android:textDirection="rtl"
+                android:textSize="22sp"
+
+                />
+
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_barber_name"
+                android:layout_toLeftOf="@id/userImage"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik"
+                android:text="שם הלקוחה:"
+                android:textDirection="rtl"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_barber_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:layout_toEndOf="@+id/customer_name"
+                android:fontFamily="@font/rubik"
+                android:text="Customer name"
+                android:textDirection="rtl"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/customer_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_customer_name"
+                android:layout_toLeftOf="@id/userImage"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik"
+                android:text="מספר נייד לקוחה:"
+                android:textDirection="rtl"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt_customer_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_customer_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:layout_toEndOf="@+id/customer_phone_number"
+                android:text="Phone"
+                android:textDirection="rtl"
+                android:fontFamily="@font/rubik"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/customer_booking_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/txt_customer_phone"
+                android:layout_toLeftOf="@id/userImage"
+                android:fontFamily="@font/rubik"
+                android:text="מועד התור:"
+                android:textDirection="rtl"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_customer_phone"
+                android:layout_marginStart="5dp"
+                android:layout_toLeftOf="@id/userImage"
+                android:layout_toEndOf="@+id/customer_booking_time"
+                android:fontFamily="@font/rubik"
+                android:layout_marginTop="5dp"
+                android:text="Time"
+                android:textDirection="rtl"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/itemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/Extra_Service"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rubik"
+                    android:textSize="24sp"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/linear_view_shopping"
+            android:layout_height="246dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/Extra_Items"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_shopping"
+                android:layout_width="match_parent"
+                android:layout_height="204dp"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layoutDirection="rtl">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Total_Price"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rubik"
+                    android:textSize="26sp"/>
+
+                <TextView
+                    android:id="@+id/txt_total_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recycler_view_shopping"
+                    android:gravity="center"
+                    android:text="₪0"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:backgroundTint="@android:color/black"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:text="אישור"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

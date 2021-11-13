@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context=".DoneServiceActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_launcher_background" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="Customer Name"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_customer_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Customer Phone"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/call_customer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_local_phone_black_24dp"
+                    android:layout_toLeftOf="@+id/txt_customer_phone"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/edt_services"
+        android:hint="תוספת שירות"
+        android:fontFamily="@font/rubik"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add_shopping"
+            android:text="כאן תוכלי להוסיף מוצרים"
+            android:fontFamily="@font/rubik"
+            android:textSize="16sp"
+            android:backgroundTint="#424242"
+            android:drawableEnd="@drawable/ic_add_black_24dp"
+            android:drawableTint="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/rdi_no_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ללא תמונה"
+                android:fontFamily="@font/rubik"
+                android:textSize="16sp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rdi_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textSize="16sp"
+                android:text="הוסיפי תמונה"/>
+
+            </RadioGroup>
+
+
+            <ImageView
+                android:id="@+id/img_customer_hair"
+                android:visibility="gone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_add_black_24dp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:text="אישור"
+        android:layout_width="250dp"
+        android:fontFamily="@font/rubik"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

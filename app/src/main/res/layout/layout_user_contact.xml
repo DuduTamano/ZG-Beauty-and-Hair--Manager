@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:id="@+id/customer_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/txt_salon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toLeftOf="@id/userImage"
+            android:fontFamily="@font/elephant"
+            android:text="Salon Name"
+            android:textColor="@android:color/black"
+            android:textDirection="rtl"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_salon_name"
+            android:layout_toLeftOf="@id/userImage"
+            android:fontFamily="sans-serif"
+            android:text="שם הלקוחה:"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_salon_name"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/customer_name"
+            android:fontFamily="sans-serif"
+            android:text="Customer name"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/customer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_name"
+            android:layout_toLeftOf="@id/userImage"
+            android:fontFamily="sans-serif"
+            android:text="מספר נייד:"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_customer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_name"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/customer_phone"
+            android:fontFamily="sans-serif"
+            android:text="Phone Number"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/customer_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_phone"
+            android:layout_toLeftOf="@id/userImage"
+            android:fontFamily="sans-serif"
+            android:text="כתובת:"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_customer_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_phone"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/customer_address"
+            android:fontFamily="sans-serif"
+            android:text="Address Salon"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/customer_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_address"
+            android:layout_toLeftOf="@id/userImage"
+            android:fontFamily="sans-serif"
+            android:text="תאריך הצטרפות:"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_customer_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_address"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/customer_created"
+            android:fontFamily="sans-serif"
+            android:text="0000"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

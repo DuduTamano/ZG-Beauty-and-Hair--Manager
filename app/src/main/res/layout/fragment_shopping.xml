@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="19dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/product_activity"
+    tools:context=".Fragments.ShoppingFragment">
+
+    <HorizontalScrollView
+        android:scrollbars="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:singleLine="true"
+            app:singleSelection="true"
+            android:paddingTop="10dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_brazilian_hair"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="שיער ברזילאי"
+                android:textColor="@android:color/black"
+                app:chipBackgroundColor="@android:color/white"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wax"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ווקס"
+                android:textColor="@android:color/darker_gray"
+                app:chipBackgroundColor="@android:color/white" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_spray"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ספריי"
+                android:textColor="@android:color/darker_gray"
+                app:chipBackgroundColor="@android:color/white" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_hair_cream"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="קרמים לשיער"
+                android:textColor="@android:color/darker_gray"
+                app:chipBackgroundColor="@android:color/white" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wave"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="פיאות"
+                android:textColor="@android:color/darker_gray"
+                app:chipBackgroundColor="@android:color/white" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_items"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

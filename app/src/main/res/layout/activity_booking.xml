@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layoutDirection="rtl"
+tools:context=".BookingActivity">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/img_booking"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/calendar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="45dp"
+        android:text="כניסה ליומן"
+        android:fontFamily="@font/rubik"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/back_pressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:backgroundTintMode="@color/red"
+        android:onClick="back"
+        app:srcCompat="@drawable/back_arrow_black" />
+
+</FrameLayout>
+
+<LinearLayout
+    android:id="@+id/layout_user_information"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toTopOf="@+id/recycler_bookings">
+
+    <ImageView
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:layout_gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_filter_list" />
+
+    <TextView
+        android:id="@+id/txt_booking_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="רשימת כל התורים (0)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/layout_user_information"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-16dp" />
+
+</LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_bookings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <OnClick motion:targetId="@+id/back_up"></OnClick>
+
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/collapsing_toolbar"
+                motion:framePosition="100"
+                android:alpha="0" />
+        </KeyFrameSet>
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <OnClick motion:targetId="@+id/constraintLayout"></OnClick>
+
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/collapsing_toolbar"
+                motion:framePosition="100"
+                android:alpha="0" />
+        </KeyFrameSet>
+
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="400dp"
+            motion:layout_constraintBottom_toTopOf="@+id/back_up"
+            motion:layout_constraintTop_toTopOf="@+id/collapsing_toolbar"
+            android:layout_marginRight="20dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/constraintLayout2"
+            android:layout_marginStart="15dp">
+
+
+        </Constraint>
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:id="@+id/txt_name_shopping_item"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/ScrollView"
+            motion:layout_constraintTop_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </Constraint>
+        <Constraint
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp" />
+        <Constraint
+            android:layout_height="1dp"
+            motion:layout_editor_absoluteX="185dp"
+            android:layout_width="match_parent"
+            android:id="@+id/back_up"
+            motion:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+        <Constraint
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleX="0.66"
+            android:scaleY="0.66"
+            android:id="@+id/constraintLayout2"
+            motion:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="70dp"
+            motion:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            android:layout_marginBottom="1dp"
+            motion:layout_editor_absoluteX="112dp">
+
+
+        </Constraint>
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="@+id/collapsing_toolbar"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:id="@+id/ScrollView"
+            android:layout_marginBottom="50dp"
+            motion:layout_editor_absoluteX="0dp"
+            motion:layout_constraintVertical_bias="0.311" />
+
+    </ConstraintSet>
+</MotionScene>
